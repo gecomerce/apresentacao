@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>BARR3TO SOLUÇÕES</title>
+</head>
+
+<style>
+    
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #iframe {
+        display: block;
+        height:calc(93% + 70px);
+    }
+
+    #iframe2 {
+        display: none;
+    }
+
+
+
+    @media (max-width: 768px) {
+
+
+        #iframe {
+            display: none;
+        }
+
+        #iframe2 {
+            display: block;
+            zoom: 1.061;
+            height:calc(90vh + 70px);
+        }
+    }
+
+</style>
+
+<body>
+
+    <iframe id="iframe"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMjk0NmM1NTItNjhiZC00NmM2LTk2ODYtNDIzOWQ5MDE2YTdjIiwidCI6IjE4Njc3OGFjLWJjNjMtNGE0My1iMmVlLThiMTk0MWVjYTRhOSJ9"></iframe>
+
+    <iframe id="iframe2"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMjk0NmM1NTItNjhiZC00NmM2LTk2ODYtNDIzOWQ5MDE2YTdjIiwidCI6IjE4Njc3OGFjLWJjNjMtNGE0My1iMmVlLThiMTk0MWVjYTRhOSJ9&pageName=1861da1497db99a262c3"></iframe>
+
+
+</body>
+
+<script>
+    if (localStorage.getItem("logon") !== "1") {
+        alert("Acesso não autorizado! Você será redirecionado para a tela de login.");
+        window.location.href = "index.html";
+    }
+</script>
+
+
+</html>
